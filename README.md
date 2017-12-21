@@ -1,4 +1,4 @@
-# graphql-server-static-webpack ![wip](https://img.shields.io/badge/status-WIP-red.svg?style=for-the-badge)
+# graphql-server-static-webpack-ts ![wip](https://img.shields.io/badge/status-WIP-red.svg?style=for-the-badge)
 
 Experimental Webpack version based on the typescript-basic boilerplate.
 Webpack performs compile-time bundling (processing schema imports) and binding generation.
