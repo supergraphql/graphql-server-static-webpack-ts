@@ -1,10 +1,9 @@
 import { GraphQLServer } from 'graphql-yoga'
-import * as fs from 'fs'
 import { Context } from './utils'
 
-import { Binding } from './generated/bindings'
+const typeDefs = require('!!raw-loader!bundle-loader!./schema.graphql')
+const { Binding } = require('!!binding-loader!bundle-loader!../database/schema.generated.graphql')
 
-const typeDefs = fs.readFileSync('./src/generated/schema.graphql', 'utf-8')
 const resolvers = {
   Query: {
     feed(parent, args, ctx: Context, info) {

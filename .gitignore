@@ -6,3 +6,4 @@ node_modules
 .graphcoolrc
 .vscode
 *.log
+build
